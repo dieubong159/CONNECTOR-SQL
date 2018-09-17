@@ -1,0 +1,11 @@
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\bin\Debug\Connectify.exe.config
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\bin\Debug\Connectify.exe
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\bin\Debug\Connectify.pdb
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.csprojAssemblyReference.cache
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.Form1.resources
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.Properties.Resources.resources
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.csproj.GenerateResource.cache
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.csproj.CoreCompileInputs.cache
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.exe
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.pdb
+C:\Users\dieub\source\repos\SQL CONNECTOR\Connectify\obj\Debug\Connectify.Form2.resources
