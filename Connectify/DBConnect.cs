@@ -34,24 +34,24 @@ namespace Connectify
             sqlcon.Close();
             return tables;
         }
-        //static public List<string> GetDatabaseList()
-        //{
-        //    List<string> list = new List<string>();
+        static public List<string> GetDatabaseList()
+        {
+            List<string> list = new List<string>();
 
-        //    // Open connection to the database
-        //    sqlcon.Open();
-        //        using (SqlCommand cmd = new SqlCommand("SELECT name from sys.databases", sqlcon))
-        //        {
-        //            using (IDataReader dr = cmd.ExecuteReader())
-        //            {
-        //                while (dr.Read())
-        //                {
-        //                    list.Add(dr[0].ToString());
-        //                }
-        //            }
-        //        }
-        //    sqlcon.Close();
-        //    return list;
-        //}
+            // Open connection to the database
+            sqlcon.Open();
+            using (SqlCommand cmd = new SqlCommand("SELECT name from sys.databases", sqlcon))
+            {
+                using (IDataReader dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        list.Add(dr[0].ToString());
+                    }
+                }
+            }
+            sqlcon.Close();
+            return list;
+        }
     }
 }
