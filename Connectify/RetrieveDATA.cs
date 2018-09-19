@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace Connectify
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            DBConnect.sqlcon = new SqlConnection(DBConnect.connectionstr);
             cbTables.DataSource = DBConnect.ListTables();
         }
 

@@ -10,8 +10,8 @@ namespace Connectify
 {
     static class DBConnect
     {
-       public static SqlConnection sqlcon = new SqlConnection(Connectify.Properties.Settings.Default.ConnectionStr);
-
+        public static string connectionstr="";
+        public static SqlConnection sqlcon = new SqlConnection();
         public static DataTable getData(string query)
         {
             var dt = new DataTable();

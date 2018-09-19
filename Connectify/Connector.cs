@@ -65,14 +65,14 @@ namespace Connectify
                 }
                 else
                 {
-                    Connectify.Properties.Settings.Default.ConnectionStr = strConnect;
-                    Connectify.Properties.Settings.Default.Save();
-                    //sqlconn.Open();
+                    DBConnect.connectionstr = strConnect;
+                    sqlconn.Open();
                     MessageBox.Show("Login Succeed!");
                     Console.Beep();
                     this.Hide();
                     RetrieveDATA form = new RetrieveDATA();
                     form.Show();
+                    sqlconn.Close();
                 }
             }
             catch
@@ -95,12 +95,10 @@ namespace Connectify
             }
             try
             {
-                SqlConnection sqlconn = new SqlConnection(strConnect);
-                Connectify.Properties.Settings.Default.ConnectionStr = strConnect;
-                Connectify.Properties.Settings.Default.Save();
-
-                sqlconn.Open();
+                DBConnect.connectionstr = strConnect;
+                DBConnect.sqlcon = new SqlConnection(strConnect);           
                 cbDatabase.DataSource = DBConnect.GetDatabaseList();
+                DBConnect.sqlcon.Close();
             }catch
             {
                 MessageBox.Show("No Server match found!! Please try again!");
